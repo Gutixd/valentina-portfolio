@@ -1,0 +1,9 @@
+# carpeta fuente de medios (duplicados — ya están en assets/)
+fotos videos/
+
+# archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
