@@ -158,4 +158,42 @@
     });
   }, 'anchors');
 
+  /* ---- Reels: autoplay muted in view, tap to unmute ---- */
+  safe(function () {
+    var reels = [...document.querySelectorAll('[data-reel]')];
+    if (!reels.length) return;
+    var current = null; // currently unmuted reel
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (ents) {
+        ents.forEach(function (en) {
+          var v = en.target.querySelector('video');
+          if (!v) return;
+          if (en.isIntersecting && en.intersectionRatio > 0.4) {
+            var pr = v.play();
+            if (pr && pr.catch) pr.catch(function () {});
+            en.target.classList.add('playing');
+          } else {
+            v.pause();
+            en.target.classList.remove('playing');
+            if (current === en.target) { v.muted = true; setIcon(en.target, true); current = null; }
+          }
+        });
+      }, { threshold: [0, 0.4, 0.75] });
+      reels.forEach(function (r) { io.observe(r); });
+    } else {
+      reels.forEach(function (r) { var v = r.querySelector('video'); if (v) { v.play().catch(function(){}); r.classList.add('playing'); } });
+    }
+    function setIcon(reel, muted) { var b = reel.querySelector('[data-sound]'); if (b) b.textContent = muted ? '🔇' : '🔊'; }
+    function unmute(reel) {
+      if (current && current !== reel) { var pv = current.querySelector('video'); if (pv) pv.muted = true; setIcon(current, true); }
+      var v = reel.querySelector('video');
+      if (!v) return;
+      if (v.muted) { v.muted = false; v.play().catch(function () {}); setIcon(reel, false); current = reel; }
+      else { v.muted = true; setIcon(reel, true); current = null; }
+    }
+    reels.forEach(function (r) {
+      r.addEventListener('click', function (e) { e.preventDefault(); unmute(r); });
+    });
+  }, 'reels');
+
 })();

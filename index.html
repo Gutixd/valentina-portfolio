@@ -4,11 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Valentina Bustamante · Publicista · Content Creator · Dirección de Arte</title>
-<meta name="description" content="Portafolio de Valentina Bustamante Maturana. Publicista, Content Creator y Directora de la agencia BrandUp en Santiago, Chile. Campañas, branding y contenido." />
+<meta name="description" content="Portafolio de Valentina Bustamante Maturana. Publicista, Content Creator y Directora de BrandUp en Santiago, Chile. Campañas, reels, branding y contenido." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260607a" />
+<link rel="stylesheet" href="styles.css?v=20260607b" />
+<link rel="stylesheet" href="css/showreel.css?v=20260607b" />
 </head>
 <body id="top">
 <div class="cursor" data-cursor></div><div class="cursor-dot" data-cursor-dot></div>
@@ -17,16 +18,16 @@
 <header class="nav">
   <a class="nav__logo" href="index.html">VALEN<span>.</span></a>
   <nav class="nav__links">
-    <a href="index.html" class="active">Inicio</a>
-    <a href="trabajos.html">Trabajos</a>
+    <a href="#campanas">Trabajo</a>
+    <a href="#reels">Reels</a>
     <a href="sobre-mi.html">Sobre mí</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="#contacto">Contacto</a>
   </nav>
-  <a class="nav__cta" href="contacto.html" data-magnetic>Hablemos →</a>
+  <a class="nav__cta" href="https://wa.me/56995630607" target="_blank" rel="noopener" data-magnetic>Hablemos →</a>
   <button class="nav__burger" data-burger aria-expanded="false" aria-label="Menú"><span></span><span></span><span></span></button>
 </header>
 <div class="mobilemenu" data-mobilemenu>
-  <a href="index.html">Inicio</a><a href="trabajos.html">Trabajos</a><a href="sobre-mi.html">Sobre <span>mí</span></a><a href="contacto.html">Contacto</a>
+  <a href="#campanas">Trabajo</a><a href="#reels">Reels</a><a href="trabajos.html">Todos</a><a href="sobre-mi.html">Sobre <span>mí</span></a><a href="#contacto">Contacto</a>
 </div>
 
 <main>
@@ -34,7 +35,7 @@
 <section class="hero wrap">
   <div class="hero__top">
     <span class="tag">Portafolio 2026</span>
-    <span class="tag--out tag">Santiago, Chile</span>
+    <span class="tag tag--out">Santiago, Chile</span>
     <span class="label" style="color:var(--ink-soft)">Disponible para trabajar</span>
   </div>
   <h1 class="hero__title" data-fit>
@@ -46,65 +47,234 @@
     <span>Content Creator</span><span class="sep">/</span>
     <span>Dirección de Arte</span>
   </div>
-  <p class="hero__lead">Convierto ideas en campañas, identidad visual y contenido que la gente recuerda. Dirijo <span class="serif">BrandUp</span> y busco un equipo donde aportar mi mirada creativa.</p>
+  <p class="hero__lead">Convierto ideas en campañas, identidad visual y contenido que la gente recuerda. Dirijo <span class="serif">BrandUp</span> y creo piezas que se ven, se sienten y se comparten.</p>
   <div class="hero__actions">
-    <a href="trabajos.html" class="btn btn--solid" data-magnetic>Ver trabajos</a>
-    <a href="sobre-mi.html" class="btn btn--ghost" data-magnetic>Sobre mí</a>
+    <a href="#campanas" class="btn btn--solid" data-magnetic>Ver mi trabajo</a>
+    <a href="#reels" class="btn btn--ghost" data-magnetic>Ver reels</a>
   </div>
-  <div class="hero__scroll">Scroll<i></i></div>
+  <a class="hero__scroll" href="#porque">Scroll<i></i></a>
 </section>
 
 <!-- MARQUEE -->
 <section class="strip strip--blue">
   <div class="strip__track" data-marquee="-1">
-    <span>CAMPAÑAS</span><i>✦</i><span>BRANDING</span><i>✦</i><span>CONTENIDO</span><i>✦</i><span>DIRECCIÓN DE ARTE</span><i>✦</i><span>SOCIAL MEDIA</span><i>✦</i><span>CAMPAÑAS</span><i>✦</i><span>BRANDING</span><i>✦</i><span>CONTENIDO</span><i>✦</i><span>DIRECCIÓN DE ARTE</span><i>✦</i><span>SOCIAL MEDIA</span><i>✦</i>
+    <span>CAMPAÑAS</span><i>✦</i><span>REELS</span><i>✦</i><span>BRANDING</span><i>✦</i><span>CONTENIDO</span><i>✦</i><span>DIRECCIÓN DE ARTE</span><i>✦</i><span>SOCIAL MEDIA</span><i>✦</i><span>CAMPAÑAS</span><i>✦</i><span>REELS</span><i>✦</i><span>BRANDING</span><i>✦</i><span>CONTENIDO</span><i>✦</i><span>DIRECCIÓN DE ARTE</span><i>✦</i><span>SOCIAL MEDIA</span><i>✦</i>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="pad wrap">
+<!-- POR QUE YO + STATS -->
+<section class="pad wrap" id="porque">
+  <div class="cs-introwrap reveal" style="margin-bottom:3rem">
+    <div class="cs-intro">¿Por qué <span class="script" style="color:var(--blue);font-size:1.3em">yo?</span></div>
+    <div><span class="label" style="color:var(--blue)">Sobre mí</span>
+      <p style="font-size:1.12rem;color:var(--ink-2);margin-top:.5rem">Soy publicista y creadora de contenido. Entiendo la marca como un sistema completo: estrategia, dirección de arte y contenido que se mueve. Trabajo entre la cámara, el feed y la mesa de planificación, y dirijo mi propia agencia, <strong>BrandUp</strong>. No solo diseño bonito: pienso el problema, encuentro el insight y construyo el concepto.</p>
+    </div>
+  </div>
   <div class="stats reveal">
-    <div class="stat"><div class="stat__n"><span data-count="10" data-suf="+">0</span></div><div class="stat__l">Proyectos reales</div></div>
+    <div class="stat"><div class="stat__n"><span data-count="12" data-suf="+">0</span></div><div class="stat__l">Proyectos reales</div></div>
     <div class="stat"><div class="stat__n"><span data-count="6">0</span></div><div class="stat__l">Premios y reconocimientos</div></div>
     <div class="stat"><div class="stat__n"><span data-count="3">0</span></div><div class="stat__l">Marcas y agencias</div></div>
-    <div class="stat"><div class="stat__n"><span data-count="21">0</span></div><div class="stat__l">Años, mucha energía</div></div>
+    <div class="stat"><div class="stat__n"><span data-count="100" data-suf="%">0</span></div><div class="stat__l">Pasión por lo que hago</div></div>
   </div>
 </section>
 
-<!-- FEATURED -->
-<section class="pad wrap">
-  <div class="shead">
-    <div>
-      <span class="kicker reveal">Trabajo destacado</span>
-      <h2 class="shead__title reveal">Casos de <span class="blue">estudio</span></h2>
+<!-- CAMPAÑAS -->
+<section class="pad wrap" id="campanas">
+  <div class="cat reveal">
+    <div class="cat__row">
+      <div><span class="cat__n">01 — Campañas</span>
+        <h2 class="cat__title">Campañas <span class="script">publicitarias</span></h2></div>
+      <p class="cat__desc">Casos reales con problema, insight y concepto. Toca cada uno para ver el caso completo.</p>
     </div>
-    <p class="reveal reveal-d1">Campañas con problema, insight y concepto detrás. No solo estética: estrategia que se ve.</p>
   </div>
-  <div class="feat" data-feat></div>
-  <div style="margin-top:clamp(2.5rem,6vh,4rem)" class="reveal">
-    <a href="trabajos.html" class="btn btn--ink" data-magnetic>Ver todos los trabajos →</a>
+  <div class="campgrid">
+    <a class="campcard reveal" href="proyecto.html?p=bendice-tu-moto">
+      <img src="assets/work/bendice-tu-moto/pieza-libro.jpg" alt="Bendice tu moto" loading="lazy">
+      <span class="campcard__grad"></span><span class="campcard__go">→</span>
+      <div class="campcard__body"><span class="campcard__cat">Campaña · Dirección de arte</span><h3 class="campcard__title">Bendice tu moto</h3><span class="campcard__client">Templo Votivo de Maipú · FAKE</span></div>
+    </a>
+    <a class="campcard reveal reveal-d1" href="proyecto.html?p=helados-york">
+      <img src="assets/work/helados-york/board-1.jpg" alt="Helados York" loading="lazy">
+      <span class="campcard__grad"></span><span class="campcard__go">→</span>
+      <div class="campcard__body"><span class="campcard__cat">Lanzamiento · Estrategia</span><h3 class="campcard__title">Helados York</h3><span class="campcard__client">Helados York · FAKE</span></div>
+    </a>
+    <a class="campcard reveal reveal-d2" href="proyecto.html?p=admision-duoc">
+      <img src="assets/work/admision-duoc/slide-01.jpg" alt="Admisión Duoc 2027" loading="lazy">
+      <span class="campcard__grad"></span><span class="campcard__go">→</span>
+      <div class="campcard__body"><span class="campcard__cat">Campaña de marca</span><h3 class="campcard__title">Admisión 2027</h3><span class="campcard__client">Duoc UC · FAKE</span></div>
+    </a>
+    <a class="campcard reveal" href="proyecto.html?p=super-lunch">
+      <img src="assets/work/superlunch/board-3-identidad.jpg" alt="Super Lunch" loading="lazy">
+      <span class="campcard__grad"></span><span class="campcard__go">→</span>
+      <div class="campcard__body"><span class="campcard__cat">Branding · 1er lugar</span><h3 class="campcard__title">Super Lunch</h3><span class="campcard__client">Admisión Duoc UC</span></div>
+    </a>
+    <a class="campcard reveal reveal-d1" href="proyecto.html?p=debra-chile">
+      <img src="assets/work/debra-chile/slide-01.jpg" alt="DEBRA Chile" loading="lazy">
+      <span class="campcard__grad"></span><span class="campcard__go">→</span>
+      <div class="campcard__body"><span class="campcard__cat">Campaña social</span><h3 class="campcard__title">DEBRA Chile</h3><span class="campcard__client">Niños piel de cristal</span></div>
+    </a>
+    <a class="campcard reveal reveal-d2" href="trabajos.html" style="display:grid;place-items:center;background:var(--ink)">
+      <div style="text-align:center;color:#fff;padding:2rem">
+        <div style="font-family:'Anton';font-size:3rem;line-height:1;color:var(--blue)">+</div>
+        <h3 class="campcard__title" style="position:static;color:#fff">Ver todos</h3>
+        <span class="campcard__client" style="position:static;opacity:.8">12 proyectos en total</span>
+      </div>
+    </a>
   </div>
 </section>
 
-<!-- TOOLS -->
-<section class="tools pad">
+<!-- REELS (dark showreel) -->
+<section class="section--dark pad" id="reels">
   <div class="wrap">
-    <div class="shead">
-      <div><span class="kicker reveal">Herramientas</span>
-      <h2 class="shead__title reveal">Con qué <span style="color:var(--yellow)">trabajo</span></h2></div>
-      <p class="reveal reveal-d1" style="color:rgba(244,241,234,.6)">El stack creativo con el que llevo una idea desde el concepto hasta la pieza final.</p>
+    <div class="cat reveal">
+      <div class="cat__row">
+        <div><span class="cat__n" style="color:#7fd3ff">02 — Contenido</span>
+          <h2 class="cat__title">Reels &amp; <span class="neon">contenido</span></h2></div>
+        <p class="cat__desc">Ideo, grabo y edito. Contenido para marcas reales y para mis propios canales. Toca un reel para reproducirlo con sonido.</p>
+      </div>
+    </div>
+    <div class="reelgrid">
+      <div class="reel reveal" data-reel>
+        <img class="reel__poster" src="assets/work/content-creator/video-poster.jpg" alt="">
+        <video src="assets/work/content-creator/video.mp4" poster="assets/work/content-creator/video-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Marca personal</span><span class="reel__title">Contenido propio</span></div>
+      </div>
+      <div class="reel reveal reveal-d1" data-reel>
+        <img class="reel__poster" src="assets/work/chachapollo/video-1-poster.jpg" alt="">
+        <video src="assets/work/chachapollo/video-1.mp4" poster="assets/work/chachapollo/video-1-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Cliente real</span><span class="reel__title">Chachapollo</span></div>
+      </div>
+      <div class="reel reveal reveal-d2" data-reel>
+        <img class="reel__poster" src="assets/work/fake/video-1-poster.jpg" alt="">
+        <video src="assets/work/fake/video-1.mp4" poster="assets/work/fake/video-1-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Agencia FAKE</span><span class="reel__title">Campaña FAKE</span></div>
+      </div>
+      <div class="reel reveal reveal-d3" data-reel>
+        <img class="reel__poster" src="assets/work/brandup/video-2-poster.jpg" alt="">
+        <video src="assets/work/brandup/video-2.mp4" poster="assets/work/brandup/video-2-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Agencia propia</span><span class="reel__title">BrandUp</span></div>
+      </div>
+      <div class="reel reveal" data-reel>
+        <img class="reel__poster" src="assets/work/chachapollo/video-2-poster.jpg" alt="">
+        <video src="assets/work/chachapollo/video-2.mp4" poster="assets/work/chachapollo/video-2-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Cliente real</span><span class="reel__title">Chachapollo · 2</span></div>
+      </div>
+      <div class="reel reveal reveal-d1" data-reel>
+        <img class="reel__poster" src="assets/work/fake/video-2-poster.jpg" alt="">
+        <video src="assets/work/fake/video-2.mp4" poster="assets/work/fake/video-2-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Agencia FAKE</span><span class="reel__title">Detrás de cámara</span></div>
+      </div>
+      <div class="reel reveal reveal-d2" data-reel>
+        <img class="reel__poster" src="assets/work/brandup/video-1-poster.jpg" alt="">
+        <video src="assets/work/brandup/video-1.mp4" poster="assets/work/brandup/video-1-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Agencia propia</span><span class="reel__title">BrandUp · proceso</span></div>
+      </div>
+      <div class="reel reveal reveal-d3" data-reel>
+        <img class="reel__poster" src="assets/work/app-movil/video-poster.jpg" alt="">
+        <video src="assets/work/app-movil/video.mp4" poster="assets/work/app-movil/video-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Diseño UX/UI</span><span class="reel__title">App móvil · Adobe XD</span></div>
+      </div>
+      <div class="reel reveal" data-reel>
+        <img class="reel__poster" src="assets/work/bell-college/video-poster.jpg" alt="">
+        <video src="assets/work/bell-college/video.mp4" poster="assets/work/bell-college/video-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Institución</span><span class="reel__title">Bell College</span></div>
+      </div>
+      <div class="reel reel--wide reveal reveal-d1" data-reel>
+        <img class="reel__poster" src="assets/work/admision-duoc/video-poster.jpg" alt="">
+        <video src="assets/work/admision-duoc/video.mp4" poster="assets/work/admision-duoc/video-poster.jpg" muted loop playsinline preload="none"></video>
+        <span class="reel__grad"></span><span class="reel__live"><i></i>En vivo</span>
+        <button class="reel__sound" data-sound aria-label="Activar sonido">🔇</button>
+        <div class="reel__meta"><span class="reel__cat">Spot · Duoc UC</span><span class="reel__title">Admisión 2027</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDING & DISEÑO -->
+<section class="pad wrap" id="branding">
+  <div class="cat reveal">
+    <div class="cat__row">
+      <div><span class="cat__n">03 — Branding</span>
+        <h2 class="cat__title">Branding &amp; <span class="script">diseño</span></h2></div>
+      <p class="cat__desc">Identidad visual, sistemas de marca y piezas gráficas para clientes reales.</p>
+    </div>
+  </div>
+  <div class="masonry">
+    <div class="mitem reveal"><img src="assets/work/superlunch/board-3-identidad.jpg" alt="Super Lunch · identidad visual" loading="lazy"><span class="mitem__cap">Super Lunch · Identidad visual</span></div>
+    <div class="mitem reveal"><img src="assets/work/bschool/bschool-1.jpg" alt="BSchool" loading="lazy"><span class="mitem__cap">BSchool · Pieza gráfica</span></div>
+    <div class="mitem reveal"><img src="assets/work/superlunch/board-1-sobre.jpg" alt="Super Lunch · sobre la marca" loading="lazy"><span class="mitem__cap">Super Lunch · Sobre la marca</span></div>
+    <div class="mitem reveal"><img src="assets/work/bell-college/bell.jpg" alt="Bell College" loading="lazy"><span class="mitem__cap">Bell College · Campaña</span></div>
+    <div class="mitem reveal"><img src="assets/work/superlunch/board-2-perfil.jpg" alt="Super Lunch · perfil cliente" loading="lazy"><span class="mitem__cap">Super Lunch · Perfil de cliente</span></div>
+    <div class="mitem reveal"><img src="assets/work/bschool/bschool-2.jpg" alt="BSchool" loading="lazy"><span class="mitem__cap">BSchool · Comunicación</span></div>
+    <div class="mitem reveal"><img src="assets/work/superlunch/board-4-extra.jpg" alt="Super Lunch · aplicaciones" loading="lazy"><span class="mitem__cap">Super Lunch · Aplicaciones</span></div>
+    <div class="mitem reveal"><img src="assets/work/bell-college/bell-2.jpg" alt="Bell College" loading="lazy"><span class="mitem__cap">Bell College · Pieza</span></div>
+    <div class="mitem reveal"><img src="assets/work/bschool/bschool-3.jpg" alt="BSchool" loading="lazy"><span class="mitem__cap">BSchool · Diseño</span></div>
+  </div>
+</section>
+
+<!-- SOFTWARE -->
+<section class="tools pad" id="software">
+  <div class="wrap">
+    <div class="cat reveal">
+      <div class="cat__row">
+        <div><span class="cat__n" style="color:var(--yellow)">04 — Stack</span>
+          <h2 class="cat__title" style="color:var(--paper)">Software que <span style="color:var(--yellow)">uso</span></h2></div>
+        <p class="cat__desc">De la idea a la pieza final.</p>
+      </div>
     </div>
     <div class="toolsgrid" data-tools></div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="contact pad">
+<!-- CLIENTES -->
+<section class="pad wrap" id="clientes">
+  <div class="cat reveal" style="text-align:center">
+    <span class="cat__n">Marcas &amp; clientes con los que trabajé</span>
+  </div>
+  <div class="clients reveal">
+    <img src="assets/work/_logos/templo-maipu.jpg" alt="Templo Votivo de Maipú">
+    <img src="assets/work/_logos/duoc-uc.jpg" alt="Duoc UC">
+    <img src="assets/work/_logos/agencia-fake.jpg" alt="Agencia FAKE">
+    <img src="assets/work/_logos/brandup.jpg" alt="BrandUp">
+    <img src="assets/work/_logos/superlucnh.jpg" alt="Super Lunch">
+    <img src="assets/work/_logos/chachapollo.jpg" alt="Chachapollo">
+    <img src="assets/work/_logos/bell-collge.jpg" alt="Bell College">
+    <img src="assets/work/_logos/bschool.jpg" alt="BSchool">
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact pad" id="contacto">
   <div class="wrap">
     <span class="kicker reveal">¿Trabajamos juntos?</span>
     <h2 class="contact__title reveal">Sumemos <span class="serif">talento</span><br>a tu equipo</h2>
     <a href="https://wa.me/56995630607" target="_blank" rel="noopener" class="contact__mail reveal reveal-d1" data-magnetic>+56 9 9563 0607</a>
-    <div class="reveal reveal-d2"><a href="contacto.html" class="btn" style="background:#fff;color:var(--blue)" data-magnetic>Ir a contacto →</a></div>
+    <div class="socials reveal reveal-d2">
+      <a class="sbtn" href="https://www.instagram.com/vaalengg/" target="_blank" rel="noopener" data-magnetic aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+      <a class="sbtn" href="https://www.tiktok.com/@vaaleengg" target="_blank" rel="noopener" data-magnetic aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.1 1.6 3.7 3.8 4.1v2.6c-1.3.1-2.6-.2-3.8-.8v5.9c0 3.4-2.3 5.7-5.4 5.7-3 0-5.1-2.2-5.1-5 0-3.1 2.5-5.1 5.6-4.7v2.7c-.4-.1-.9-.2-1.3-.2-1.2 0-2.1.9-2.1 2.1 0 1.3.9 2.2 2.2 2.2 1.4 0 2.3-1 2.3-2.6V3h3.8Z"/></svg><span>TikTok</span></a>
+      <a class="sbtn" href="https://www.linkedin.com/in/valentina-bustamante-maturana-014641293/" target="_blank" rel="noopener" data-magnetic aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3.3 9h3.4v11H3.3V9Zm5.3 0h3.25v1.5h.05c.45-.85 1.55-1.75 3.2-1.75 3.4 0 4.05 2.25 4.05 5.2V20h-3.4v-4.85c0-1.15-.02-2.65-1.6-2.65-1.6 0-1.85 1.25-1.85 2.55V20H8.6V9Z"/></svg><span>LinkedIn</span></a>
+      <a class="sbtn" href="https://wa.me/56995630607" target="_blank" rel="noopener" data-magnetic aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.4-.5-.5-.9-1.1-1.2-1.7-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.2-.5 0-.2 0-.4-.1-.5L9.5 6.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-1 2.6.1 1.2.6 2.3 1.3 3.2a9.3 9.3 0 0 0 4 3.2c.6.2 1.1.4 1.6.4.6 0 1.2-.1 1.6-.5.3-.2.8-.9 1-1.4.1-.5.1-.9 0-1-.1-.1-.2-.2-.4-.3Z"/></svg><span>WhatsApp</span></a>
+      <a class="sbtn" href="https://www.behance.net/valentibustama27" target="_blank" rel="noopener" data-magnetic aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.1 6.2c.9 0 1.7.1 2.3.4.6.2 1 .6 1.3 1.1.3.5.4 1 .4 1.7 0 .7-.2 1.3-.5 1.7-.3.4-.8.8-1.4 1 .8.2 1.4.6 1.8 1.2.4.5.6 1.2.6 2 0 .6-.1 1.2-.4 1.6-.2.5-.6.8-1 1.1-.4.3-.9.5-1.5.6-.5.1-1.1.2-1.6.2H2V6.2h7.1Zm-.4 4.8c.5 0 .9-.1 1.2-.3.3-.2.4-.6.4-1.1 0-.3 0-.5-.1-.7-.1-.2-.3-.3-.4-.4-.2-.1-.4-.2-.6-.2-.2 0-.5-.1-.7-.1H4.9v2.8h3.8Zm.2 5.1c.3 0 .5 0 .8-.1.2 0 .4-.1.6-.3.2-.1.3-.3.4-.5.1-.2.2-.5.2-.8 0-.6-.2-1.1-.5-1.4-.4-.3-.9-.4-1.5-.4H4.9v3.5h4Zm7.5-3.2c.4.4.9.5 1.6.5.5 0 .9-.1 1.3-.4.3-.2.5-.5.6-.7h2c-.3 1-.8 1.7-1.5 2.2-.7.4-1.5.6-2.5.6-.7 0-1.3-.1-1.9-.3-.5-.2-1-.5-1.4-1-.4-.4-.7-.9-.9-1.5-.2-.6-.3-1.2-.3-1.9 0-.6.1-1.3.3-1.8.2-.6.5-1.1 1-1.5.4-.4.9-.8 1.4-1 .6-.2 1.2-.4 1.9-.4.7 0 1.4.1 2 .4.5.3 1 .7 1.4 1.2.3.5.6 1 .8 1.7.1.6.2 1.3.1 2h-6.5c0 .7.2 1.2.5 1.6Zm2.7-4.3c-.3-.3-.7-.5-1.3-.5-.4 0-.7.1-.9.2-.3.1-.5.3-.6.5-.2.2-.3.4-.3.6-.1.2-.1.4-.1.5h4c-.1-.6-.3-1.1-.6-1.4l-.1-.4ZM15 7.7h5v1.2h-5z"/></svg><span>Behance</span></a>
+    </div>
+    <div class="reveal reveal-d3" style="margin-top:1.6rem"><a href="sobre-mi.html" class="btn" style="background:#fff;color:var(--blue)" data-magnetic>Conóceme mejor →</a></div>
   </div>
 </section>
 </main>
@@ -113,13 +283,13 @@
   <div class="footer__big" data-fit-footer aria-hidden="true">VALENTINA</div>
   <div class="footer__row">
     <span>© 2026 Valentina Bustamante Maturana</span>
-    <nav class="footer__nav"><a href="trabajos.html">Trabajos</a><a href="sobre-mi.html">Sobre mí</a><a href="contacto.html">Contacto</a></nav>
+    <nav class="footer__nav"><a href="trabajos.html">Trabajos</a><a href="sobre-mi.html">Sobre mí</a><a href="#contacto">Contacto</a></nav>
     <a href="#top" data-magnetic>Volver arriba ↑</a>
   </div>
 </footer>
 
-<script src="data/projects.js?v=20260607a"></script>
-<script src="js/site.js?v=20260607a" defer></script>
+<script src="data/projects.js?v=20260607b"></script>
+<script src="js/site.js?v=20260607b" defer></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var h = document.querySelector('[data-tools]'); if (h && window.TOOLS) window.TOOLS.forEach(function (t) {
