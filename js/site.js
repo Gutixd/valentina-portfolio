@@ -6,8 +6,11 @@
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var P = window.PROJECTS || [];
 
-  /* loaded */
-  requestAnimationFrame(function () { document.body.classList.add('is-loaded'); });
+  /* loaded — animate hero via rAF, but guarantee it via load + timeout */
+  function setLoaded() { document.body.classList.add('is-loaded'); }
+  requestAnimationFrame(function () { requestAnimationFrame(setLoaded); });
+  window.addEventListener('load', setLoaded);
+  setTimeout(setLoaded, 1200);
 
   /* ---- Render featured (home) ---- */
   safe(function () {
@@ -91,18 +94,31 @@
     });
   }, 'cursor');
 
-  /* ---- Reveal ---- */
+  /* ---- Reveal (scroll-based: works even if IntersectionObserver is throttled) ---- */
   var io;
+  function revealInView() {
+    var vh = innerHeight || document.documentElement.clientHeight;
+    document.querySelectorAll('.reveal:not(.in)').forEach(function (e) {
+      if (e.getBoundingClientRect().top < vh * 0.92) e.classList.add('in');
+    });
+  }
   function rescanReveal() {
-    var els = document.querySelectorAll('.reveal:not(.in)');
-    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
-    if (!io) io = new IntersectionObserver(function (ents) {
-      ents.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, { threshold: .08, rootMargin: '0px 0px -7% 0px' });
-    els.forEach(function (e) { io.observe(e); });
+    // IntersectionObserver for nice early/staggered reveal when available...
+    if ('IntersectionObserver' in window) {
+      if (!io) io = new IntersectionObserver(function (ents) {
+        ents.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { threshold: 0.04, rootMargin: '0px 0px -6% 0px' });
+      document.querySelectorAll('.reveal:not(.in)').forEach(function (e) { io.observe(e); });
+    }
+    // ...plus a guaranteed scroll/timeout path so content is never stuck hidden
+    revealInView();
   }
   safe(rescanReveal, 'reveal');
   window.__rescanReveal = rescanReveal;
+  addEventListener('scroll', revealInView, { passive: true });
+  addEventListener('load', function () { revealInView(); setTimeout(revealInView, 300); });
+  setTimeout(revealInView, 1000);
+  setTimeout(function () { document.querySelectorAll('.reveal:not(.in)').forEach(function (e) { e.classList.add('in'); }); }, 2600);
 
   /* ---- Marquee ---- */
   safe(function () {
